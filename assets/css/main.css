@@ -58,14 +58,14 @@ input#date {
     background-color: #fff;
     align-items: center;
     justify-items: center;
-    padding-inline: 39px;
+    padding-inline: 3.3%;
     height: 80px;
     .menu {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
-      gap: 74px;
+      gap: 0;
     }
     li a.nav_link {
       /* background-color: #007bff; */
