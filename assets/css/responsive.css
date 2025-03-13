@@ -1,0 +1,445 @@
+.wrapper {
+  /* padding-inline: 1.563rem; */
+  padding-inline: 1rem;
+}
+.extra_wrapper {
+  padding-inline: 1rem;
+}
+section#hero {
+  height: 84.5vh;
+  width: 100%;
+  position: relative;
+  img.slider_image_1 {
+    object-fit: cover;
+    width: 100%;
+  }
+  .slider_content {
+    position: absolute;
+    top: 60.876%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    h2.slider_heading {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  .slider_arrow {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    span {
+      font-size: 24px;
+      background-color: #fff;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      cursor: pointer;
+      line-height: 1.44;
+    }
+    span.active {
+      background-color: #65aef2;
+    }
+  }
+}
+.booking-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+}
+.date-section.lable_gap {
+  width: 100%;
+}
+
+.submit.lable_gap {
+  width: 100%;
+}
+.person-section.lable_gap {
+  width: 100%;
+}
+#book {
+  background-color: #fff;
+  padding: 5rem 0;
+  .book_container {
+    background-color: #e9f3f6;
+    border-radius: 42px;
+    padding-left: 10px;
+    padding-right: 10px;
+    .top_content {
+      padding-top: 2.25rem;
+      text-align: center;
+      line-height: 1.44;
+      margin-bottom: 3rem;
+      color: #000;
+      .small_heading {
+        font-size: 2rem;
+        font-weight: normal;
+      }
+      .under_heading {
+        font-size: 15px;
+        font-weight: normal;
+        color: #5e5e5e;
+      }
+    }
+  }
+}
+input#bookNow {
+  width: 100%;
+}
+.submit.lable_gap label {
+  color: transparent;
+}
+/* booking */
+.grid.category {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  height: 100%;
+}
+.category_item-1 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 2;
+  grid-column-end: 2;
+  img {
+    height: 100%;
+  }
+}
+.category_item-2 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 2;
+  img {
+    height: 100%;
+  }
+}
+.category_item-3 {
+  grid-row-start: 3;
+  grid-column-start: 1;
+
+  grid-row-end: 4;
+  grid-column-end: 2;
+  img {
+    height: 100%;
+  }
+}
+.category_item-4 {
+  grid-row-start: 4;
+  grid-column-start: 1;
+
+  grid-row-end: 5;
+  grid-column-end: 2;
+  img {
+    height: 100%;
+  }
+}
+.category_item-5 {
+  grid-row-start: 5;
+  grid-column-start: 1;
+
+  grid-row-end: 6;
+  img {
+    height: 100%;
+  }
+}
+/* offer section */
+
+.top_offer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  gap: 15px;
+  .left {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    width: 100%;
+    gap: 15px;
+    h4 {
+      font-size: 24px;
+      font-weight: normal;
+    }
+    span {
+      color: #1e1e1e;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .special {
+      color: #65aef2;
+      font-size: 32px;
+      font-weight: normal;
+      text-align: center;
+    }
+  }
+  .right {
+    .shop_link {
+      font-size: 32px;
+      color: #65aef2;
+    }
+  }
+}
+.product_content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  .product_item {
+    border-radius: 42px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.09);
+    padding: 10px 20px 50px 20px;
+    .top img {
+      width: 100%;
+    }
+  }
+}
+/* footer section */
+.row_item.newslatter {
+  width: 100%;
+}
+
+.footer_menu {
+  width: 100%;
+}
+
+footer.footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding-bottom: 10px;
+  .row {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    gap: 3rem;
+  }
+  input[type="email"] {
+    background-color: #fff;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    border: none;
+    text-align: center;
+  }
+  input[type="submit"] {
+    background-color: #65aef2;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    /* padding-inline: 1.563rem; */
+    padding-inline: 3.75rem;
+  }
+  .extra_wrapper {
+    padding-inline: calc(15.375rem / 2);
+  }
+  /* slider */
+  section#hero {
+    height: 84.5vh;
+    width: 100%;
+    position: relative;
+    img.slider_image_1 {
+      object-fit: cover;
+    }
+    .slider_content {
+      position: absolute;
+      top: 60.876%;
+      left: 0%;
+      transform: translate(0%, -50%);
+      h2.slider_heading {
+        color: #fff;
+        font-size: 64px;
+        font-weight: bold;
+      }
+    }
+    .slider_arrow {
+      position: absolute;
+      bottom: 3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      span {
+        font-size: 24px;
+        background-color: #fff;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        cursor: pointer;
+        line-height: 1.44;
+      }
+      span.active {
+        background-color: #65aef2;
+      }
+    }
+  }
+  .booking-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+  }
+  .date-section.lable_gap {
+    width: 25%;
+  }
+
+  .submit.lable_gap {
+    width: 25%;
+  }
+  .person-section.lable_gap {
+    width: 40%;
+  }
+  input#bookNow {
+    width: unset;
+  }
+
+  #book {
+    background-color: #fff;
+    padding: 5rem 0;
+    .book_container {
+      background-color: #e9f3f6;
+      border-radius: 42px;
+      padding-left: 5.313rem;
+      padding-right: 5.313rem;
+      .top_content {
+        padding-top: 2.25rem;
+        text-align: center;
+        line-height: 1.44;
+        margin-bottom: 3rem;
+        color: #000;
+        .small_heading {
+          font-size: 2rem;
+          font-weight: normal;
+        }
+        .under_heading {
+          font-size: 15px;
+          font-weight: normal;
+          color: #5e5e5e;
+        }
+      }
+    }
+  }
+  /* booking */
+  .grid.category {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+    height: 100%;
+    padding: 25px 0;
+  }
+
+  .category_item-1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    grid-row-end: 3;
+    grid-column-end: 2;
+  }
+  .category_item-2 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+    grid-row-end: 2;
+    grid-column-end: 3;
+  }
+  .category_item-3 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+
+    grid-row-end: 3;
+    grid-column-end: 3;
+  }
+  .category_item-4 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+
+    grid-row-end: 3;
+    grid-column-end: 4;
+  }
+  .category_item-5 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+
+    grid-row-end: 2;
+    grid-column-end: 4;
+  }
+  /* offer section */
+  .top_offer {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    .left {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: column nowrap;
+      width: 60%;
+      h4 {
+        font-size: 64px;
+        font-weight: normal;
+      }
+      span {
+        font-size: 24px;
+      }
+      .special {
+        text-align: left;
+      }
+    }
+    .right {
+      .shop_link {
+        font-size: 32px;
+        color: #65aef2;
+      }
+    }
+  }
+  .product_content {
+    flex-flow: row nowrap;
+    gap: 3%;
+    .product_item {
+    }
+  }
+  /* footer section */
+  .row_item.newslatter {
+    width: 50%;
+  }
+
+  .footer_menu {
+    width: 50%;
+  }
+
+  footer.footer {
+    .row {
+      flex-flow: row nowrap;
+      align-items: self-end;
+      gap: 10%;
+    }
+    input[type="email"] {
+    }
+    input[type="submit"] {
+    }
+  }
+}

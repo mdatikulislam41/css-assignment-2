@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hotel Booking</title>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico" />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <meta
+      name="theme-color"
+      content="#65AEF2"
+      media="(prefers-color-scheme: light)"
+    />
+  </head>
+
+  <body>
+    <!-- Header  -->
+    <header class="header_section extra_wrapper">
+      <nav class="">
+        <div class="left">
+          <ul class="menu">
+            <li class="menu_item">
+              <a href="" class="nav_link" aria-current="page">Home</a>
+            </li>
+            <li class="menu_item"><a href="" class="nav_link">About</a></li>
+            <li class="menu_item">
+              <a href="" class="nav_link">Newsletter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="center">
+          <div class="logo">
+            <a href="./index.html"
+              ><img src="./assets/img/Logo.png" class="main_logo" alt="logo"
+            /></a>
+          </div>
+        </div>
+        <div class="right">
+          <ul class="menu">
+            <li class="menu_item">
+              <a href="" class="nav_link">Services</a>
+            </li>
+            <li class="menu_item"><a href="" class="nav_link">Rooms</a></li>
+            <li class="menu_item"><a href="" class="nav_link">Pricing</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <section id="hero">
+        <div class="hero_container">
+          <!-- <img
+            src="./assets/img/Image.png"
+            alt="slider image"
+            class="slider_image_1"
+          /> -->
+          <img
+            class="slider_image_1"
+            srcset="
+              ./assets/img/responsive/Image-400w.webp   400w,
+              ./assets/img/responsive/Image-600w.webp   600w,
+              ./assets/img/responsive/Image-800w.webp   800w,
+              ./assets/img/responsive/Image-1000w.webp 1000w,
+              ./assets/img/responsive/Image-1200w.webp 1200w
+            "
+            sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 800px) 800px, (max-width: 1000px) 1000px, (min-width: 1001px) 1200px"
+            src="./assets/img/Image.png"
+            alt=""
+            width="1440"
+            height="658"
+          />
+          <div class="slider_content extra_wrapper">
+            <h2 class="slider_heading">
+              Discover Extraordinary<br />Comfort in Hotels
+            </h2>
+          </div>
+          <div class="slider_arrow">
+            <span class="one"></span><span class="two active"></span
+            ><span class="three"></span>
+          </div>
+        </div>
+      </section>
+      <section id="book">
+        <div class="extra_wrapper">
+          <div class="row book_container">
+            <div class="top_content">
+              <h4 class="small_heading">Book a Room</h4>
+              <span class="under_heading"
+                >Discover the perfect space for you!</span
+              >
+            </div>
+            <form action="" method="post" id="booking_form">
+              <div class="booking-container">
+                <div class="date-section lable_gap">
+                  <label for="date">Date</label>
+                  <div class="input-group input-group-date">
+                    <input
+                      type="date"
+                      id="date"
+                      name="date"
+                      placeholder="Check Available"
+                    />
+                    <button type="button" role="check">Check Available</button>
+                  </div>
+                </div>
+                <div class="person-section lable_gap">
+                  <label for="person">Person</label>
+                  <div class="input-group input-group-person">
+                    <fieldset class="fieldset_person filedset">
+                      <span><img src="./assets/img/Vector.png" alt="" /></span>
+
+                      <label for="adults">Adults</label>
+                      <select id="adults" name="adults">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </fieldset>
+                    <fieldset class="fieldset_children filedset">
+                      <span
+                        ><img src="./assets/img/Vector-1.png" alt=""
+                      /></span>
+
+                      <label for="children">Children</label>
+                      <select id="children" name="children">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="submit lable_gap">
+                  <label for="person">Submit</label>
+                  <div class="input-group-submit">
+                    <input type="submit" id="bookNow" value="BOOK NOW" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="bookingCategory">
+        <div class="wrapper">
+          <div class="row">
+            <div class="grid category">
+              <div class="category_item-1 item">
+                <img
+                  src="./assets/img/Rectangle-6.png"
+                  alt="Rooms"
+                  class="category_image"
+                /><span class="category_name bold">Rooms</span>
+              </div>
+              <div class="category_item-2 item">
+                <img
+                  src="./assets/img/Rectangle-8.png"
+                  alt="Rooms"
+                  class="category_image"
+                /><span class="category_name bold">Dining</span>
+              </div>
+              <div class="category_item-3 item">
+                <img
+                  src="./assets/img/Rectangle-9.png"
+                  alt="Rooms"
+                  class="category_image"
+                /><span class="category_name bold">Service & Facilities</span>
+              </div>
+              <div class="category_item-4 item">
+                <img
+                  src="./assets/img/Rectangle-10.png"
+                  alt="Rooms"
+                  class="category_image"
+                /><span class="category_name bold">Conferences & Meetings</span>
+              </div>
+              <div class="category_item-5 item">
+                <img
+                  src="./assets/img/Rectangle-11.png"
+                  alt="Rooms"
+                  class="category_image"
+                /><span class="category_name bold">Wedding Package</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="offer">
+        <div class="wrapper">
+          <div class="row offer_container">
+            <div class="top_offer">
+              <div class="left">
+                <h5 class="special">Special Offers</h5>
+                <h4>Best offer of the month</h4>
+                <span
+                  >Experience Fantastic Benefits and Obtain Better Rates When
+                  You Make a Direct Booking on Our Official Website</span
+                >
+              </div>
+              <div class="right">
+                <a href="" class="shop_link bold">View all</a>
+              </div>
+            </div>
+            <div class="product_content">
+              <div class="product_item">
+                <div class="top">
+                  <img src="./assets/img/Rectangle-13.png" alt="" />
+                </div>
+                <div class="middle">
+                  <div class="text cat bold">Room</div>
+                  <div class="middel_content">
+                    <div class="product_name bold">HoneyMone</div>
+                    <div class="user">
+                      <span><img src="./assets/img/Vector.png" alt="" /></span
+                      ><span class="count">2</span>
+                    </div>
+                  </div>
+                  <div class="product_footer">
+                    Indulge in a Memorable One-Time Romantic Dinner for Two
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div class="price bold">
+                    <span class="currency">$</span><span>699</span>
+                  </div>
+                  <spna class="separator flex-end">/</spna
+                  ><span class="flex-end">night</span>
+                </div>
+              </div>
+              <div class="product_item">
+                <div class="top">
+                  <img src="./assets/img/Rectangle-14.png" alt="" />
+                </div>
+                <div class="middle">
+                  <div class="text cat bold">Room</div>
+                  <div class="middel_content">
+                    <div class="product_name bold">HoneyMone</div>
+                    <div class="user">
+                      <span><img src="./assets/img/Vector.png" alt="" /></span
+                      ><span class="count">30</span>
+                    </div>
+                  </div>
+                  <div class="product_footer">
+                    Indulge in a Memorable One-Time Romantic Dinner for Two
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div class="price bold">
+                    <span class="currency">$</span><span>699</span>
+                  </div>
+                  <spna class="separator flex-end">/</spna
+                  ><span class="flex-end">night</span>
+                </div>
+              </div>
+              <div class="product_item">
+                <div class="top">
+                  <img src="./assets/img/Rectangle-15.png" alt="" />
+                </div>
+                <div class="middle">
+                  <div class="text cat bold">Dining</div>
+                  <div class="middel_content">
+                    <div class="product_name bold">HoneyMone</div>
+                    <div class="user">
+                      <span><img src="./assets/img/Vector.png" alt="" /></span
+                      ><span class="count">2</span>
+                    </div>
+                  </div>
+                  <div class="product_footer">
+                    Indulge in a Memorable One-Time Romantic Dinner for Two
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div class="price bold">
+                    <span class="currency">$</span><span>699</span>
+                  </div>
+                  <spna class="separator flex-end">/</spna
+                  ><span class="flex-end">table</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="row">
+          <div class="row_item newslatter">
+            <h2 class="newslatter_heading">Newsletter & Special Promo</h2>
+            <form action="">
+              <fieldset class="footer">
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Enter Your Email Here"
+                /><input type="submit" value="Subscirbe" class="bold" />
+              </fieldset>
+            </form>
+          </div>
+          <div class="footer_menu">
+            <div class="footer_logo">
+              <a href="./index.html"
+                ><img src="./assets/img/Hotel-Logo.png" alt="logo"
+              /></a>
+            </div>
+            <div class="footer_menu_content">
+              <div class="widget_1">
+                <ul class="footer_menu_list">
+                  <li class="list_item"><a href="">About us</a></li>
+                  <li class="list_item"><a href="">Contact</a></li>
+                  <li class="list_item"><a href="">Location</a></li>
+                </ul>
+              </div>
+              <div class="widget_2">
+                <ul class="footer_menu_list">
+                  <li class="list_item"><a href="">Faq</a></li>
+                  <li class="list_item"><a href="">Term of use</a></li>
+                  <li class="list_item"><a href="">Privacy policy</a></li>
+                </ul>
+              </div>
+              <div class="widget_3">
+                <ul class="footer_menu_list">
+                  <li class="list_item"><a href="">Service</a></li>
+                  <li class="list_item"><a href="">Career</a></li>
+                  <li class="list_item"><a href="">How to book</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copywright">
+        © Copyright Booking Hotels. All right reserved.
+      </div>
+    </footer>
+  </body>
+</html>
