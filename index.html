@@ -3,26 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Hotel Booking</title>
     <link rel="icon" type="image/png" href="./assets/img/favicon.ico" />
 
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
-
     <meta
       name="theme-color"
       content="#65AEF2"
       media="(prefers-color-scheme: light)"
     />
   </head>
-
   <body>
     <!-- Header  -->
     <header class="header_section extra_wrapper">
-      <nav class="">
+      <nav class="flex">
         <div class="left desktop">
-          <ul class="menu">
+          <ul class="menu flex">
             <li class="menu_item">
               <a href="" class="nav_link" aria-current="page">Home</a>
             </li>
@@ -40,7 +37,7 @@
           </div>
         </div>
         <div class="right desktop">
-          <ul class="menu">
+          <ul class="menu flex">
             <li class="menu_item">
               <a href="" class="nav_link">Services</a>
             </li>
@@ -48,7 +45,7 @@
             <li class="menu_item"><a href="" class="nav_link">Pricing</a></li>
           </ul>
         </div>
-        <div class="mobile-header">
+        <div class="mobile-header flex">
           <div class="left">
             <div class="logo">
               <a href="./index.html"
@@ -102,7 +99,7 @@
               Discover Extraordinary<br />Comfort in Hotels
             </h2>
           </div>
-          <div class="slider_arrow">
+          <div class="slider_arrow flex">
             <span class="one"></span><span class="two active"></span
             ><span class="three"></span>
           </div>
@@ -118,10 +115,10 @@
               >
             </div>
             <form action="" method="post" id="booking_form">
-              <div class="booking-container">
-                <div class="date-section lable_gap">
+              <div class="booking-container flex">
+                <div class="date-section lable_gap flex">
                   <label for="date">Date</label>
-                  <div class="input-group input-group-date">
+                  <div class="input-group input-group-date flex">
                     <input
                       type="date"
                       id="date"
@@ -131,10 +128,10 @@
                     <button type="button" role="check">Check Available</button>
                   </div>
                 </div>
-                <div class="person-section lable_gap">
+                <div class="person-section lable_gap flex">
                   <label for="person">Person</label>
-                  <div class="input-group input-group-person">
-                    <fieldset class="fieldset_person filedset">
+                  <div class="input-group input-group-person flex">
+                    <fieldset class="fieldset_person filedset flex">
                       <span><img src="./assets/img/Vector.png" alt="" /></span>
 
                       <label for="adults">Adults</label>
@@ -146,7 +143,7 @@
                         <option value="4">4</option>
                       </select>
                     </fieldset>
-                    <fieldset class="fieldset_children filedset">
+                    <fieldset class="fieldset_children filedset flex">
                       <span
                         ><img src="./assets/img/Vector-1.png" alt=""
                       /></span>
@@ -162,9 +159,9 @@
                     </fieldset>
                   </div>
                 </div>
-                <div class="submit lable_gap">
+                <div class="submit lable_gap flex">
                   <label for="person">Submit</label>
-                  <div class="input-group-submit">
+                  <div class="input-group-submit flex">
                     <input type="submit" id="bookNow" value="BOOK NOW" />
                   </div>
                 </div>
@@ -219,8 +216,8 @@
       <section id="offer">
         <div class="wrapper">
           <div class="row offer_container">
-            <div class="top_offer">
-              <div class="left">
+            <div class="top_offer flex">
+              <div class="left flex">
                 <h5 class="special">Special Offers</h5>
                 <h4>Best offer of the month</h4>
                 <span
@@ -232,14 +229,14 @@
                 <a href="" class="shop_link bold">View all</a>
               </div>
             </div>
-            <div class="product_content">
+            <div class="product_content flex">
               <div class="product_item">
                 <div class="top">
                   <img src="./assets/img/Rectangle-13.png" alt="" />
                 </div>
-                <div class="middle">
+                <div class="middle flex">
                   <div class="text cat bold">Room</div>
-                  <div class="middel_content">
+                  <div class="middel_content flex">
                     <div class="product_name bold">HoneyMone</div>
                     <div class="user">
                       <span><img src="./assets/img/Vector.png" alt="" /></span
@@ -250,7 +247,7 @@
                     Indulge in a Memorable One-Time Romantic Dinner for Two
                   </div>
                 </div>
-                <div class="bottom">
+                <div class="bottom flex">
                   <div class="price bold">
                     <span class="currency">$</span><span>699</span>
                   </div>
@@ -264,7 +261,7 @@
                 </div>
                 <div class="middle">
                   <div class="text cat bold">Room</div>
-                  <div class="middel_content">
+                  <div class="middel_content flex">
                     <div class="product_name bold">HoneyMone</div>
                     <div class="user">
                       <span><img src="./assets/img/Vector.png" alt="" /></span
@@ -275,7 +272,7 @@
                     Indulge in a Memorable One-Time Romantic Dinner for Two
                   </div>
                 </div>
-                <div class="bottom">
+                <div class="bottom flex">
                   <div class="price bold">
                     <span class="currency">$</span><span>699</span>
                   </div>
@@ -289,7 +286,7 @@
                 </div>
                 <div class="middle">
                   <div class="text cat bold">Dining</div>
-                  <div class="middel_content">
+                  <div class="middel_content flex">
                     <div class="product_name bold">HoneyMone</div>
                     <div class="user">
                       <span><img src="./assets/img/Vector.png" alt="" /></span
@@ -300,7 +297,7 @@
                     Indulge in a Memorable One-Time Romantic Dinner for Two
                   </div>
                 </div>
-                <div class="bottom">
+                <div class="bottom flex">
                   <div class="price bold">
                     <span class="currency">$</span><span>699</span>
                   </div>
@@ -316,11 +313,11 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="wrapper">
-        <div class="row">
+        <div class="row flex">
           <div class="row_item newslatter">
             <h2 class="newslatter_heading">Newsletter & Special Promo</h2>
             <form action="">
-              <fieldset class="footer">
+              <fieldset class="footer flex">
                 <input
                   type="email"
                   name=""
@@ -330,13 +327,13 @@
               </fieldset>
             </form>
           </div>
-          <div class="footer_menu">
+          <div class="footer_menu flex">
             <div class="footer_logo">
               <a href="./index.html"
                 ><img src="./assets/img/Hotel-Logo.png" alt="logo"
               /></a>
             </div>
-            <div class="footer_menu_content">
+            <div class="footer_menu_content flex">
               <div class="widget_1">
                 <ul class="footer_menu_list">
                   <li class="list_item"><a href="">About us</a></li>
