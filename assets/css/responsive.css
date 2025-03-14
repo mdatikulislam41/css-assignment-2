@@ -66,6 +66,10 @@ section#hero {
       border-radius: 50%;
       cursor: pointer;
       line-height: 1.44;
+      transition: background-color 1000ms;
+      &:hover {
+        background-color: #65aef2;
+      }
     }
     span.active {
       background-color: #65aef2;
@@ -213,6 +217,10 @@ input#bookNow {
     .shop_link {
       font-size: 32px;
       color: #65aef2;
+      transition: color 1000ms;
+      &:hover {
+        color: #000;
+      }
     }
   }
 }
@@ -263,6 +271,11 @@ footer.footer {
     border-radius: 0 10px 10px 0;
     color: #fff;
     font-size: 24px;
+    transition: all 1000ms;
+    &:hover {
+      transform: translate(0px, 0px) scale(1.03, 1);
+      box-shadow: 4px 5px 17px -4px #65aef2;
+    }
   }
 }
 @media only screen and (min-width: 768px) {

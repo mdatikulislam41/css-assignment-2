@@ -154,6 +154,11 @@ fieldset.filedset {
     color: #fff;
     font-size: 24px;
     font-weight: bold;
+    transition: all 1000ms;
+    &:hover {
+      transform: translate(0px, 0px) scale(1.03, 1);
+      box-shadow: 4px 5px 17px -4px #65aef2;
+    }
   }
 }
 .lable_gap {
@@ -191,6 +196,10 @@ form#booking_form {
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 36px;
+    transition: color 100ms;
+  }
+  &:hover span {
+    color: var(--secondary-color);
   }
 }
 /* Offer section */
@@ -340,4 +349,31 @@ li.list_item {
 }
 .count {
   margin-left: 5px;
+}
+/* Hover effect */
+
+.item:hover,
+.product_item:hover {
+  transform: translate(-5px, -5px);
+}
+
+.item:hover img,
+.product_item:hover img {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+.item,
+.product_item {
+  cursor: pointer;
+  transition: transform 1000ms;
+}
+.item img,
+.product_item img {
+  transition: filter 1000ms;
+}
+li.list_item a {
+  transition: color 1000ms;
+}
+li.list_item a:hover {
+  color: #65aef2;
 }
